@@ -1,0 +1,93 @@
+.MiniRightNav {
+    float: right;
+    margin: 0;
+    margin-top: 0px;
+    padding: 0;
+    margin-top: 12px;
+}
+
+.MiniRightNav li {
+    list-style: outside none none;
+    margin: 0 0 20px;
+    padding: 0;
+    width: 48px;
+}
+
+.MiniRightNav li a {
+    display: block;
+    padding: 7px;
+    position: relative;
+}
+
+.MiniRightNav h4 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    bottom: 0;
+    top: 1%;
+    right: 47px;
+    line-height: 38px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    transition: all 0.50s ease 0s;
+    width: 0;
+}
+
+.MiniRightNav a:hover h4 {
+    width: auto;
+    padding: 0 1em;
+    overflow: visible;
+}
+
+.MiniRightNav a:hover .fa-undo-alt {
+    transform: rotate(360deg);
+}
+
+.fa-undo-alt {
+    transition: transform 0.8s;
+}
+
+.MiniRightNav a h4 {
+    color: #ffffff;
+}
+
+#carouselExampleIndicators {
+    height: 80vh;
+}
+
+.carousel-inner {
+    height: 100%;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.d-block {
+    height: 100%;
+}
+
+.fa-long-arrow-alt-down {
+    margin-left: 49.8%;
+    margin-top: 2%;
+}
+
+iframe {
+    width: 80%;
+    height: 80vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    height: 100%;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.d-block {
+    height: 100%;
+}
+
+.fa-long-arrow-alt-down {
+    margin-left: 49.8%;
+    margin-top: 5%;
+}

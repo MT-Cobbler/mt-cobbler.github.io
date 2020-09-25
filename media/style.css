@@ -1,0 +1,193 @@
+/*
+    Border checking
+*/
+
+body {
+    overflow-x: hidden;
+}
+
+.menuLogo {
+    width: 25%;
+    height: 100%;
+}
+
+#splashPage {
+    height: 90vh;
+}
+
+.screen {
+    height: 50vh;
+}
+
+img {
+    width: 100vw;
+    height: 100%;
+}
+
+
+/* 
+div>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+div>ul li {
+    float: right;
+    margin: 2% 2%;
+    text-decoration: none;
+}
+
+div>ul li a {
+    font-size: 150%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s, color .2s, text-decoration 1s;
+}
+
+div>ul li:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(143, 21, 21);
+    color: black;
+} */
+
+.screen {
+    position: relative;
+    padding: 25vh 10%;
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    /*box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);*/
+    transform-style: inherit;
+}
+
+.screen:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);*/
+}
+
+.optionText {
+    width: 30%;
+    padding: 5%;
+    background: rgba(240, 230, 220, .7);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+    position: absolute;
+}
+
+.screen:nth-child(2n) .optionText {
+    margin-left: 50%;
+    margin-right: auto;
+    transform: translateZ(-2px);
+}
+
+.screen:nth-child(2n+1) .optionText {
+    margin-left: auto;
+    margin-right: 0;
+    z-index: 2;
+}
+
+.screen,
+.screen:before {
+    /*  margin-top: 20%;
+    */
+    background: 100% 100% / cover;
+    background-attachment: fixed;
+}
+
+
+/* .optionText {
+    width: 50%;
+    padding: 5%;
+    border-radius: 5px;
+    background: rgba(240, 230, 220, .7);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+    z-index: 3;
+} */
+
+#menuOption_1 {
+    background-image: url("media/backgrounds/img_parallax.jpg");
+    transform: translateZ(-2px);
+}
+
+#menuOption_2 {
+    background-image: url("media/backgrounds/img_parallax2.jpg");
+    z-index: 2;
+}
+
+#menuOption_3 {
+    background-image: url("media/backgrounds/img_parallax3.jpg");
+    transform: translateZ(-2px);
+}
+
+#menuOption_4 {
+    background-image: url("media/backgrounds/img_parallax4.jpg");
+    z-index: 2;
+}
+
+#menuOption_5 {
+    background-image: url("media/backgrounds/img_parallax2.jpg");
+    transform: translateZ(-2px);
+}
+
+
+/* The projects page */
+
+.flip-card {
+    background-color: transparent;
+    width: 15%;
+    height: 40vh;
+    margin-left: 2.5%;
+    perspective: 1000px;
+    float: left;
+}
+
+
+/* To move the first tile only */
+
+.flip-card:nth-child(1) {
+    margin-left: 7.5%;
+}
+
+.flip-card-inner {
+    border-radius: 5%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.315);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    border-radius: 5%;
+    background-color: rgb(0, 1, 68);
+    color: rgb(255, 255, 255);
+}
+
+.flip-card-back {
+    border-radius: 5%;
+    background-color: #00473e;
+    color: white;
+    transform: rotateY(180deg);
+}
