@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 /*
     Border checking
 */
@@ -158,7 +163,7 @@ img.pngPick {
 
 #menuOption_5 {
     /*background-image: url("media/backgrounds/img_parallax2.jpg");*/
-    background-color: gold;
+    background-color: grey;
     transform: translateZ(-2px);
 }
 
@@ -218,8 +223,40 @@ img.pngPick {
     transform: rotateY(180deg);
 }
 
+.card {
+    pointer-events: none;
+    transform: translateZ(0);
+    width: 40%;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    display: absolute;
+}
 
-/*HomePage(){*/
+.card:after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 10px;
+    border-radius: 50px;
+}
+
+.card-content {
+    margin: 1%;
+    text-align: center;
+    transform-style: preserve-3d;
+    position: absolute;
+}
+
+.card-content img {
+    width: 40%;
+    border-radius: 5px;
+    box-shadow: 0 0 16px #333;
+}
+
+.card-content:before {
+    content: '';
+    position: absolute;
+}
 
 nav {
     /*background-color: gold;*/
@@ -282,41 +319,3 @@ div#splashPage>div>h3 {
     margin-top: -30px;
     padding-left: 4px;
 }
-
-.card {
-    pointer-events: none;
-    transform: translateZ(0);
-    width: 40%;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    display: absolute;
-}
-
-.card:after {
-    content: '';
-    position: absolute;
-    width: 40%;
-    height: 10px;
-    border-radius: 50px;
-}
-
-.card-content {
-    margin: 1%;
-    text-align: center;
-    transform-style: preserve-3d;
-    position: absolute;
-}
-
-.card-content img {
-    width: 40%;
-    border-radius: 5px;
-    box-shadow: 0 0 16px #333;
-}
-
-.card-content:before {
-    content: '';
-    position: absolute;
-}
-
-
-/*}HomePage*/

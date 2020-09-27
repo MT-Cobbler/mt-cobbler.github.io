@@ -13,23 +13,27 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="pageTransition.css" rel="stylesheet" type="text/css">
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-    <script defer src="swup.js"></script>
+    <style>
+        .card {
+            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.342);
+        }
+
+    </style>
 </head>
 
 <body style="background-color: #f2f2f2">
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html"><img src="media/logo/logo.png" class="menuLogo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/projects.html">PROJECT </a>
+                    <a class="nav-link" href="projects.html">PROJECT </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/about.html">ABOUT</a>
+                    <a class="nav-link" href="about.html">ABOUT</a>
                 </li>
 
             </ul>
@@ -37,68 +41,121 @@
         </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid gsap-anim-heading" id="projects">
         <h1 class="display-4" style="text-align: center;">PROJECTS</h1>
         <p class="lead" style="text-align: center;">Have a look at all of our project, There's something for everyone. From games to an art gallery, we've got it all :)</p>
     </div>
     <!--The cards will appear hear-->
     <div class="container-fluid ">
-        <div class="row align-items-center" style="padding: 40px;">
-
-
-
-            <div class="col-md card-cont">
-                <div class="card mx-auto" style="width: 250px">
-                    <img src="./media/ic_game.jpg" style="height: 200px;object-fit: cover" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Game</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="row align-items-center" style="padding: 40px;padding: 0 13%">
+            <a href="game.html">
+                <div class="col-md card-cont gsap-anim-left1">
+                    <div class="card mx-auto" style="width: 250px">
+                        <img src="./media/ic_game.jpg" style="height: 200px;object-fit: cover" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Game</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="col-md card-cont">
-                <div class="card mx-auto" style="width: 250px">
-                    <img src="./media/ic_short_film.jpg" style="height: 200px;object-fit: cover" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Short Film</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="video.html">
+                <div class="col-md card-cont gsap-anim-left2">
+
+                    <div class="card mx-auto" style="width: 250px">
+                        <img src="./media/ic_short_film.jpg" style="height: 200px;object-fit: cover" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Short Film</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="col-md card-cont">
-                <div class="card mx-auto" style="width: 250px">
-                    <img src="./media/ic_web_app.jpg" style="height: 200px;object-fit: cover" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Web App</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="webApp.html">
+                <div class="col-md card-cont gsap-anim-left3">
+
+                    <div class="card mx-auto" style="width: 250px">
+                        <img src="./media/ic_web_app.jpg" style="height: 200px;object-fit: cover" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Web App</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="col-md card-cont">
-                <div class="card mx-auto" style="width: 250px;">
-                    <img src="./media/ic_art_gallery.jpg" style="height: 200px;object-fit: cover" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Art Gallery</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="artGallery.html">
+                <div class="col-md card-cont gsap-anim-left4">
+                    <div class="card mx-auto" style="width: 250px;">
+                        <img src="./media/ic_art_gallery.jpg" style="height: 200px;object-fit: cover" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Art Gallery</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="col-md card-cont">
-                <div class="card mx-auto" style="width: 250px;">
-                    <img src="./media/ic_other.jpg" style="height: 200px;object-fit: cover" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Other</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#">
+                <div class="col-md card-cont gsap-anim-left5">
+
+                    <div class="card mx-auto" style="width: 250px;">
+                        <img src="./media/ic_other.jpg" style="height: 200px;object-fit: cover" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Other</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>
+        var t1 = gsap.timeline({
+            defaults: {
+                duration: 1
+            }
+        });
+        t1.to(".navbar-brand", {
+            x: -10,
+            opacity: 1
+        });
+        t1.from(".gsap-anim-heading", {
+            y: -100,
+            stagger: .6,
+            opacity: 0
+        });
+        t1.from(".gsap-anim-left1", {
+            x: -100,
+            stagger: .6,
+            opacity: 0
+        });
+        t1.from(".gsap-anim-left2", {
+            x: -100,
+            stagger: .6,
+            opacity: 0
+        });
+        t1.from(".gsap-anim-left3", {
+            x: -100,
+            stagger: .6,
+            opacity: 0
+        });
+        t1.from(".gsap-anim-left4", {
+            x: -100,
+            stagger: .6,
+            opacity: 0
+        });
+        t1.from(".gsap-anim-left5", {
+            x: -100,
+            stagger: .6,
+            opacity: 0
+        });
+
+    </script>
 </body>
 
 </html>

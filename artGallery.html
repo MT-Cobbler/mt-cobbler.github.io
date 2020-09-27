@@ -237,7 +237,9 @@
             }
         }
     </style>
-    <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+    <link href="pageTransition.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script defer src="transitionScript.js"></script>
 </head>
 <header class="container-fluid py-4">
     <div class="row">
@@ -259,7 +261,7 @@
 
 <!-- <body class="pattern-horizontal-lines-xl"> -->
 
-<body>
+<body id="swup" class="transition-fade">
 
     <div class="container-fluid">
         <div class="gallery" id="gallery">
