@@ -10,27 +10,49 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
     <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="pageTransition.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Favicon goes here-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //parallax scroll
+            $(window).on("load scroll", function() {
+                var parallaxElement = $(".parallax_scroll"),
+                    parallaxQuantity = parallaxElement.length;
 
+                window.requestAnimationFrame(function() {
+                    for (var i = 0; i < parallaxQuantity; i++) {
+                        var currentElement = parallaxElement.eq(i),
+                            windowTop = $(window).scrollTop(),
+                            elementTop = currentElement.offset().top,
+                            elementHeight = currentElement.height(),
+                            viewPortHeight = window.innerHeight * 2 - elementHeight * 8,
+                            scrolled = windowTop - elementTop + viewPortHeight;
+                        currentElement.css({
+                            transform: "translate3d(0," + scrolled * -0.4 + "px, 0)",
+
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#"><img src="media/logo/logo.png" class="menuLogo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/projects.html">PROJECT </a>
+                    <a class="nav-link" href="projects.html">PROJECT </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/about.html">ABOUT</a>
+                    <a class="nav-link" href="about.html">ABOUT</a>
                 </li>
             </ul>
 
@@ -38,7 +60,7 @@
     </nav>
     <!--screen is the viewport of in the menu-->
     <div class="screen" id="splashPage">
-        <div class="logoBox" style="border:1px solid black">
+        <div class="logoBox">
             <h1>EXHIBIT IV</h1>
             <h3>Bringing the best to you</h3>
         </div>
@@ -47,37 +69,68 @@
 
     <div class="screen" id="menuOption_1">
 
-        <div class="optionText">
-            <p>Game Name</p>
-            <a href="game.html"><button class="btn btn-dark" style="position: absolute;">Go to Game</button></a>
+        <div class="optionText parallax_scroll">
+            <h2>Rusted</h2>
+            <p>Rusted is an action-adventure platformer game created by a member of Exhibit IV and his teammates. It immerses the player in a story of a robot that was deemed defective by society. He then goes after the ones that sentenced him to his demise
+                once he has repaired himself.</p>
+            <a href="game.html"> <button class="btn btn-dark" style="position: absolute;">Explore</button></a>
+            <img src="media/backgrounds/shadowed_char.png" class="pngPick">
         </div>
     </div>
     <div class="screen" id="menuOption_2">
 
-        <div class="optionText">
-            <p>Out of the Woods</p>
-            <a href="video.html"><button class="btn btn-dark" style="position: absolute;">Go to Video</button></a>
+        <div class="optionText parallax_scroll">
+            <h2>Out of the Woods</h2>
+            <p>When two University friends go jogging at a remote forest, what they encounter is not what they expected. They fall victim to their own psyche as their fear manifests, leading them to their demise.</p>
+            <a href="video.html"><button class="btn btn-dark" style="position: absolute;">Explore</button></a>
         </div>
     </div>
-    <div class="screen" id="menuOption_3">
-        <div class="optionText">
-            <p>Web App name</p>
-            <a href="webApp.html"><button class="btn btn-dark" style="position: absolute;">Go to Web App</button></a>
+    <div class="screen" id="menuOption_4" style="background-color: #eee;">
+        <h1 style="color: white;">Gallery</h1>
+        <div class="card">
+            <div class="card-content">
+                <img src="https://source.unsplash.com/random/?tech,practical" alt="">
+                <img src="https://source.unsplash.com/random/?tech,pass" alt="">
+                <img src="https://source.unsplash.com/random/?tech,bigger" alt="">
+                <img src="https://source.unsplash.com/random/?tech,number" alt="">
+            </div>
+        </div>
+        <div class="optionText parallax_scroll">
+
+            <h2>Gallery</h2>
+            <p>Our gallery is to show off the amazing photo's and sketches taken by experts as if they were showcased</p>
+
+            <a href="artGallery.html"><button class="btn btn-dark" style="position: absolute;">Enter the showcase</button></a>
         </div>
     </div>
+    <!-- 
     <div class="screen" id="menuOption_4">
         <div class="optionText">
-            <p>Art Gallery</p>
-            <a href="artGallery.html"><button class="btn btn-dark" style="position: absolute;">Go to </button></a>
+            <p>Menu option 4</p>
+            <button class="btn btn-dark" style="position: absolute;">Go to {title}</button>
         </div>
     </div>
     <div class="screen" id="menuOption_5">
         <div class="optionText">
             <p>Menu option 5</p>
-            <a href="game.html"><button class="btn btn-dark" style="position: absolute;">Go to </button></a>
+            <button class="btn btn-dark" style="position: absolute;">Go to {title}</button>
         </div>
-    </div>
+    </div> -->
 
+    <!-- <div id="rotateX">
+        <div class="Xa"></div>
+        <div class="Xb"></div>
+    </div> -->
+
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $('#menuOption_4').on("mousemove", (e) => {
+            var width = ($(window).innerWidth() / 2 - e.pageX) / 20;
+            var height = ($(window).innerHeight() / -3 - e.pageY / -10);
+            $('.card-content img').css("transform", "rotateY(" + width + "deg)rotateX(" + height + "deg)")
+        })
+    </script>
 </body>
 
 </html>
