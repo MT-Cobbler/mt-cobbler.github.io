@@ -19,10 +19,13 @@
     <link href="projects.css" rel="stylesheet" type="text/css">
     <link href="pageTransition.css" rel="stylesheet">
     <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-    <script defer src="transitionScript.js"></script>
+    <script src="transitionScript.js"></script>
     <!--Favicon goes here-->
     <style>
-
+        body {
+            opacity: 0;
+            margin-left: 100%;
+        }
     </style>
 </head>
 
@@ -44,7 +47,7 @@
     </div>
 </header>
 
-<body style="background-color:rgb(61, 61, 61); color:white">
+<body style="background-color:rgb(61, 61, 61); color:white" onload="fadeIn()">
 
     <iframe src="index.html"></iframe>
     <i class="fas fa-long-arrow-alt-down"></i>

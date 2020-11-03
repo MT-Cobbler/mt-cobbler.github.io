@@ -1,12 +1,9 @@
 .transition-fade {
     opacity: 1;
-    transition: 500ms;
+    transition: 1000ms;
     transform: translateX(0);
     transform-origin: right;
 }
-
-
-/*when it leaves the page*/
 
 html.is-animating .transition-fade {
     opacity: 1;
@@ -15,4 +12,5 @@ html.is-animating .transition-fade {
 
 html.is-leaving .transition-fade {
     transform: translateX(-100%);
+    opacity: 0;
 }

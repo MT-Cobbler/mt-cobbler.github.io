@@ -1,0 +1,23 @@
+{
+    "name": "transition",
+    "version": "1.0.0",
+    "description": "%PDF-1.5\r%����\r 89 0 obj\r<</Linearized 1/L 880718/O 91/E 54553/N 13/T 880195/H [ 493 346]>>\rendobj\r               \r 107 0 obj\r<</DecodeParms<</Columns 4/Predictor 12>>/Filter/FlateDecode/ID[<4BA4013DD8B706F602148D9A0467B442><0605DD6E28D18A41975624E6223BC05A>]/Index[89 30]/Info 88 0 R/Length 86/Prev 880196/Root 90 0 R/Size 119/Type/XRef/W[1 2 1]>>stream\r h�bbd\u0010``b`6\u0007\u0012\f�@��\u0000H�T�X��\u0004S7�� R�\u0003\">�\b~\u0010\u0001V� c1o\u0002\u0011���g\r��^\u000e$̓\u0018�\u0018\u0019^�Lf`$���8�;@�\u0001\u0000Mx\f,\r endstream\rendobj\rstartxref\r 0\r %%EOF",
+    "main": "transitionScript.js",
+    "dependencies": {
+        "swup": "^2.0.11"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/imcoda/2020_IMY320_EXHIBIT_IV.git"
+    },
+    "author": "Matthew Schoemna",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/imcoda/2020_IMY320_EXHIBIT_IV/issues"
+    },
+    "homepage": "https://github.com/imcoda/2020_IMY320_EXHIBIT_IV#readme"
+}

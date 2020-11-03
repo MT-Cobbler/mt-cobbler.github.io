@@ -38,99 +38,88 @@
             });
         });
     </script>
+    <script defer src="node_modules/swup/dist/swup.min.js" charset="utf-8"></script>
+    <script defer src="transitionScript.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="pageTransition.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#"><img src="media/logo/logo.png" class="menuLogo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <main id="swup" class="transition-fade">
+
+
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="/#"><img src="media/logo/logo.png" class="menuLogo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <!-- <span class="navbar-toggler-icon"></span> -->
         </button>
-        <div class="collapse navbar-collapse text-right" id="navbarText">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">PROJECT </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">ABOUT</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse text-right" id="navbarText">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects.html">PROJECT </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">ABOUT</a>
+                    </li>
+                </ul>
 
-        </div>
-    </nav>
-    <!--screen is the viewport of in the menu-->
-    <div class="screen" id="splashPage">
-        <div class="logoBox">
-            <h1>EXHIBIT IV</h1>
-            <h3>Bringing the best to you</h3>
-        </div>
-    </div>
-    <!--We add the graphic as a background image/gif/video-->
-
-    <div class="screen" id="menuOption_1">
-
-        <div class="optionText parallax_scroll">
-            <h2>Rusted</h2>
-            <p>Rusted is an action-adventure platformer game created by a member of Exhibit IV and his teammates. It immerses the player in a story of a robot that was deemed defective by society. He then goes after the ones that sentenced him to his demise
-                once he has repaired himself.</p>
-            <a href="game.html"> <button class="btn btn-dark" style="position: absolute;">Explore</button></a>
-            <img src="media/backgrounds/shadowed_char.png" class="pngPick">
-        </div>
-    </div>
-    <div class="screen" id="menuOption_2">
-
-        <div class="optionText parallax_scroll">
-            <h2>Out of the Woods</h2>
-            <p>When two University friends go jogging at a remote forest, what they encounter is not what they expected. They fall victim to their own psyche as their fear manifests, leading them to their demise.</p>
-            <a href="video.html"><button class="btn btn-dark" style="position: absolute;">Explore</button></a>
-        </div>
-    </div>
-    <div class="screen" id="menuOption_4" style="background-color: #eee;">
-        <h1 style="color: white;">Gallery</h1>
-        <div class="card">
-            <div class="card-content">
-                <img src="https://source.unsplash.com/random/?tech,practical" alt="">
-                <img src="https://source.unsplash.com/random/?tech,pass" alt="">
-                <img src="https://source.unsplash.com/random/?tech,bigger" alt="">
-                <img src="https://source.unsplash.com/random/?tech,number" alt="">
+            </div>
+        </nav>
+        <!--screen is the viewport of in the menu-->
+        <div class="screen" id="splashPage">
+            <div class="logoBox">
+                <h1>EXHIBIT IV</h1>
+                <h3>Bringing the best to you</h3>
             </div>
         </div>
-        <div class="optionText parallax_scroll">
+        <!--We add the graphic as a background image/gif/video-->
 
-            <h2>Gallery</h2>
-            <p>Our gallery is to show off the amazing photo's and sketches taken by experts as if they were showcased</p>
+        <div class="screen" id="menuOption_1">
 
-            <a href="artGallery.html"><button class="btn btn-dark" style="position: absolute;">Enter the showcase</button></a>
+            <div class="optionText parallax_scroll">
+                <h2>Rusted</h2>
+                <p>Rusted is an action-adventure platformer game created by a member of Exhibit IV and his teammates. It immerses the player in a story of a robot that was deemed defective by society. He then goes after the ones that sentenced him to his
+                    demise once he has repaired himself.</p>
+                <a href="game.html"> <button class="btn btn-dark" style="position: absolute;">Explore</button></a>
+                <img src="media/backgrounds/shadowed_char.png" class="pngPick">
+            </div>
         </div>
-    </div>
-     
-    <div class="screen" id="menuOption_3">
-        <div class="optionText">
-            <p>Go to Web App</p>
-            <a href="webApp.html"><button class="btn btn-dark" style="position: absolute;">Go to Web App</button></a>
-        </div>
-    </div>
-    <div class="screen" id="menuOption_5">
-        <div class="optionText">
-            <p>Menu option 5</p>
-            <button class="btn btn-dark" style="position: absolute;">Go to {title}</button>
-        </div>
-    </div> 
+        <div class="screen" id="menuOption_2">
 
-    <!-- <div id="rotateX">
-        <div class="Xa"></div>
-        <div class="Xb"></div>
-    </div> -->
+            <div class="optionText parallax_scroll">
+                <h2>Out of the Woods</h2>
+                <p>When two University friends go jogging at a remote forest, what they encounter is not what they expected. They fall victim to their own psyche as their fear manifests, leading them to their demise.</p>
+                <a href="video.html"><button class="btn btn-dark" style="position: absolute;">Explore</button></a>
+            </div>
+        </div>
+        <div class="screen" id="menuOption_4" style="background-color: #eee;">
+            <h1 style="color: white;">Gallery</h1>
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://source.unsplash.com/random/?tech,practical" alt="">
+                    <img src="https://source.unsplash.com/random/?tech,pass" alt="">
+                    <img src="https://source.unsplash.com/random/?tech,bigger" alt="">
+                    <img src="https://source.unsplash.com/random/?tech,number" alt="">
+                </div>
+            </div>
+            <div class="optionText parallax_scroll">
 
-    <script type="text/javascript" src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        $('#menuOption_4').on("mousemove", (e) => {
-            var width = ($(window).innerWidth() / 2 - e.pageX) / 20;
-            var height = ($(window).innerHeight() / -3 - e.pageY / -10);
-            $('.card-content img').css("transform", "rotateY(" + width + "deg)rotateX(" + height + "deg)")
-        })
-    </script>
+                <h2>Gallery</h2>
+                <p>Our gallery is to show off the amazing photo's and sketches taken by experts as if they were showcased</p>
+
+                <a href="artGallery.html"><button class="btn btn-dark" style="position: absolute;">Enter the showcase</button></a>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $('#menuOption_4').on("mousemove", (e) => {
+                var width = ($(window).innerWidth() / 2 - e.pageX) / 20;
+                var height = ($(window).innerHeight() / -3 - e.pageY / -10);
+                $('.card-content img').css("transform", "rotateY(" + width + "deg)rotateX(" + height + "deg)")
+            });
+        </script>
+    </main>
 </body>
 
 </html>

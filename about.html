@@ -14,114 +14,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="pageTransition.css" rel="stylesheet" type="text/css">
     <style>
-        img {
-            width: 100%;
-            height: 100%;
-            margin-left: 10%;
-            margin-top: 5%;
-        }
-        
         .profile {
             margin: 5%;
             background-color: #eeeeee;
-            height: 30vh;
+            /* height: 30vh; */
+            width: 100%;
+        }
+        
+        .profileImage img {
+            width: 100%;
+            /* height: 100%; */
+            margin-left: 10%;
+            margin-top: 5%;
         }
     </style>
-    <link href="pageTransition.css" rel="stylesheet">
-    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-    <script defer src="transitionScript.js"></script>
+    <script defer src="node_modules/swup/dist/swup.min.js" charset="utf-8"></script>
+    <script defer src="transitionScript.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="pageTransition.css" type="text/css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html"><img src="media/logo/logo.png" class="menuLogo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <main id="swup" class="transition-fade">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/index.html"><img src="media/logo/logo.png" class="menuLogo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">PROJECT </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">ABOUT</a>
-                </li>
+            <div class="collapse navbar-collapse text-right" id="navbarText">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects.html">PROJECT </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">ABOUT</a>
+                    </li>
 
-            </ul>
+                </ul>
 
-        </div>
-    </nav>
+            </div>
+        </nav>
 
-    <!-- <img src="./media/ic_group.jpg" style="position: absolute; top: 0px; z-index: 0; height: 500px; object-fit: cover;" /> -->
+        <!-- <img src="./media/ic_group.jpg" style="position: absolute; top: 0px; z-index: 0; height: 500px; object-fit: cover;" /> -->
 
-    <div class="container-fluid">
+        <div class="container-fluid ">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-8">
-                    <div class="profile" id="profile1">
-                        <div class="row">
-                            <div class="col-4 profileImage">
-                                <img src="media/asanda.png">
-                            </div>
-                            <div class="col-6">
-                                <h4>Full name:</h4>
-                                <br>
-                                <h4>Degree:</h4>
-                                <h4>About me:</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="profile" id="profile1">
+                            <div class="row">
+                                <div class="col-4 profileImage">
+                                    <img src="media/asanda.png">
+                                </div>
+                                <div class="col-6">
+                                    <h4>Full name:</h4>
+                                    <br>
+                                    <h4>Degree:</h4>
+                                    <h4>About me:</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-8 offset-3">
-                    <div class="profile" id="profile1">
-                        <div class="row">
-                            <div class="col-4  profileImage">
-                                <img src="media/matthew.png">
-                            </div>
-                            <div class="col-6">
-                                <h4>Full name:</h4> <span>Matthew Timothy Schoeman</span>
-                                <br>
-                                <h4>Degree:</h4><span>BIS Multimedia</span>
-                                <h4>About me:</h4><span>Love music and the outdoors</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-8">
-                    <div class="profile" id="profile1">
-                        <div class="row">
-                            <div class="col-4 profileImage">
-                                <img src="media/tshego.png">
-                            </div>
-                            <div class="col-6">
-                                <h4>Full name:</h4> <span>Matthew Timothy Schoeman</span>
-                                <br>
-                                <h4>Degree:</h4><span>BIS Multimedia</span>
-                                <h4>About me:</h4><span>Love music and the outdoors</span>
+                    <div class="col-8 offset-3">
+                        <div class="profile" id="profile1">
+                            <div class="row">
+                                <div class="col-4  profileImage">
+                                    <img src="media/matthew.png">
+                                </div>
+                                <div class="col-6">
+                                    <h4>Full name:</h4> <span>Matthew Timothy Schoeman</span>
+                                    <br>
+                                    <h4>Degree:</h4><span>BIS Multimedia</span>
+                                    <h4>About me:</h4><span>Love music and the outdoors</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-8 offset-3">
-                    <div class="profile" id="profile1">
-                        <div class="row">
-                            <div class="col-4 profileImage">
-                                <img src="media/vinc.png">
+                    <div class="col-8">
+                        <div class="profile" id="profile1">
+                            <div class="row">
+                                <div class="col-4 profileImage">
+                                    <img src="media/tshego.png">
+                                </div>
+                                <div class="col-6">
+                                    <h4>Full name:</h4> <span>Matthew Timothy Schoeman</span>
+                                    <br>
+                                    <h4>Degree:</h4><span>BIS Multimedia</span>
+                                    <h4>About me:</h4><span>Love music and the outdoors</span>
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <h4>Full name:</h4> <span>Vincent MM Soweto</span>
-                                <br>
-                                <h4>Degree:</h4><span>BSc Computer Science</span>
-                                <h4>About me:</h4><span>I enjoy science, sports and travel</span>
+                        </div>
+                    </div>
+                    <div class="col-8 offset-3">
+                        <div class="profile" id="profile1">
+                            <div class="row">
+                                <div class="col-4 profileImage">
+                                    <img src="media/vinc.png">
+                                </div>
+                                <div class="col-6">
+                                    <h4>Full name:</h4> <span>Matthew Timothy Schoeman</span>
+                                    <br>
+                                    <h4>Degree:</h4><span>BIS Multimedia</span>
+                                    <h4>About me:</h4><span>Love music and the outdoors</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </div>
+        </div>
+    </main>
 </body>
 
 </html>
