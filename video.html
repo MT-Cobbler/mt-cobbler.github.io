@@ -44,7 +44,7 @@
     </div>
 </header>
 
-<body style=" color:white" id="videopage" class="background" onload="play()">
+<body style=" color:white" id="videopage" class="background">
 
 
 
@@ -53,21 +53,21 @@
         <div class="row">
 
             <div id="videodiv" class="col-8">
-
-                <div class="row" id="playbutton">
-                    <div>
-                        <button id="playbuttonbackground" onclick="player()"> 
+                <center>
+                    <div class="row" id="playbutton">
+                        <div>
+                            <button id="playbuttonbackground" onclick="player()"> 
                          <div><span id="playicon" class="fa fa-play "> </span></div>
                          
                      </button>
+                        </div>
+                        <div id="playtext"> play</div>
                     </div>
-                    <div id="playtext"> play</div>
-                </div>
 
-                <video class="center" id="vidWindow" controls top="10" width="0" height="0">
+                    <video class="center" id="vidWindow" controls top="10" width="0" height="0">
                     <source src="media/video/Magic - Expectations Motions lyrics.mp4">
                </video>
-
+                </center>
             </div>
             <div id="movieinfo" class="col-4">
                 <div class="anim1">
@@ -84,16 +84,13 @@
                 <div class="anim3">
                     <h4>Description</h4>
                     <ul>
-                        <li>Two friends from school decided to take a jog in a woodland which unfolded into a catastrophic event. This resulted in one of them being possessed by a vergeful spirit.</li>
+                        <li>Two friends from school decided to take a jog in a woodland which unfolded into a catastrophic event. </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <audio id="myAudio" controls autoplay hidden="true  ">
-        <source src="./media/audio/Fearful.MP3" type="audio/mp3" >
-    </audio>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js "></script>
 
@@ -123,13 +120,6 @@
             opacity: 0
         });
 
-        var myAudio = document.getElementById("myAudio");
-
-        function play() {
-            myAudio.play();
-            console.log("playing");
-        }
-
         function player() {
             $(function() {
                 $("button").hide(); // try to hide google navigation bar
@@ -151,14 +141,11 @@
             vid.height = 400;
             vid.width = 700;
 
-            togglePlay();
+
 
         }
 
 
-        function togglePlay() {
-            return myAudio.paused ? myAudio.play() : myAudio.pause();
-        };
 
         function visible() {
             var x = document.getElementById("playbutton");

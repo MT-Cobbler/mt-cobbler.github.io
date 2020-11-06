@@ -79,7 +79,6 @@
                 <h2>Rusted</h2>
                 <p>Rusted is an action-adventure platformer game created by a member of Exhibit IV and his teammates. It immerses the player in a story of a robot that was deemed defective by society. He then goes after the ones that sentenced him to his
                     demise once he has repaired himself.</p>
-                <span>By Tshegofatso Sithole</span><br/><br/>
                 <a href="game.html"> <button class="btn btn-dark" style="position: absolute;">Explore</button></a>
                 <img src="media/backgrounds/shadowed_char.png" class="pngPick">
             </div>
@@ -89,7 +88,7 @@
             <div class="optionText parallax_scroll">
                 <h2>Out of the Woods</h2>
                 <p>When two University friends go jogging at a remote forest, what they encounter is not what they expected. They fall victim to their own psyche as their fear manifests, leading them to their demise.</p>
-                <span>By Vincent Soweto</span><br/><br/><a href="video.html"><button class="btn btn-dark" style="position: absolute;">Explore</button></a>
+                <a href="video.html"><button class="btn btn-dark" style="position: absolute;">Explore</button></a>
             </div>
         </div>
         <div class="screen" id="menuOption_3">
@@ -97,10 +96,7 @@
             <div class="optionText parallax_scroll">
                 <h2>INCREDIBOX</h2>
                 <p>Incredibox is a music app that lets you create your own music with the help of a merry crew of beatboxers. Choose your musical style among 7 impressive atmospheres and start to lay down, record and share your mix.</p>
-                <span>By Matthew Schoeman</span><br/><br/>
-                <a href="webApp.html">
-
-                    <button class="btn btn-dark" style="position: absolute;">Try out the web version</button></a>
+                <a href="webApp.html"><button class="btn btn-dark" style="position: absolute;">Try out the web version</button></a>
             </div>
         </div>
         <div class="screen" id="menuOption_4" style="background-color: #eee;">
@@ -117,9 +113,8 @@
 
                 <h2>Gallery</h2>
                 <p>Our gallery is to show off the amazing photo's and sketches taken by experts as if they were showcased</p>
-                <span>By Matthew Schoeman</span><br/><br/>
-                <a href="artGallery.html"><button class="btn btn-dark" style="position: absolute;">Enter the showcase</button></a>
 
+                <a href="artGallery.html"><button class="btn btn-dark" style="position: absolute;">Enter the showcase</button></a>
             </div>
         </div>
 
@@ -131,6 +126,29 @@
                 var height = ($(window).innerHeight() / -3 - e.pageY / -10);
                 $('.card-content img').css("transform", "rotateY(" + width + "deg)rotateX(" + height + "deg)")
             });
+        </script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js "></script>
+        <script>
+            var t1 = gsap.timeline({
+                defaults: {
+                    duration: 1
+                }
+            });
+            t1.to(
+                ".menuLogo", {
+                x: 10,
+                opacity: 1
+            });
+            t1.to(
+                ".nav-link", {
+                x: -10,
+                opacity: 1
+            });
+            t1.to( ".screen", {
+                y: -10,
+                opacity: 1
+            })
+            
         </script>
     </main>
 </body>

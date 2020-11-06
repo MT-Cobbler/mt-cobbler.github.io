@@ -2,6 +2,12 @@ html {
     scroll-behavior: smooth;
 }
 
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
 
 /*
     Border checking
@@ -9,7 +15,78 @@ html {
 
 body {
     overflow-x: hidden;
-    width: 100vw;
+}
+
+#videopage {
+    background-color: black;
+    background-image: url('./media/woods1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 65% 100%;
+}
+
+.title {}
+
+#playbutton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0cm;
+}
+
+#playbuttonbackground {
+    background-color: transparent;
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+    border-width: medium;
+    font-size: 26px;
+}
+
+#playbuttonbackground:hover {
+    font-size: 36px;
+}
+
+nav {
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.card-cont {
+    margin-top: 40px;
+}
+
+#playicon {
+    padding: .2cm .2cm.2cm.2cm;
+    color: white;
+}
+
+#playtext {
+    visibility: hidden;
+    font-size: large;
+}
+
+#playbuttonbackground:hover+#playtext {
+    visibility: visible;
+    color: red;
+}
+
+.menuLogo {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+
+#splashPage {
+    height: 90vh;
+}
+
+.screen {
+    height: 50vh;
+}
+
+img {
     margin: 0;
     padding: 0;
 }
@@ -161,12 +238,6 @@ img.pngPick {
     z-index: 2;
 }
 
-#menuOption_5 {
-    /*background-image: url("media/backgrounds/img_parallax2.jpg");*/
-    background-color: gold;
-    transform: translateZ(-2px);
-}
-
 
 /* The projects page */
 
@@ -271,7 +342,7 @@ img.menuLogo {
 
 nav>div {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: small;
     right: 0;
     position: absolute;
 }
@@ -319,6 +390,22 @@ div#splashPage>div>h3 {
     margin-top: -30px;
     padding-left: 4px;
 }
+
+
+/*Game Styling(){*/
+
+nav {
+    /*z-index: 5;*/
+}
+
+
+/* body {
+    opacity: 0;
+    margin-left: 100%;
+}
+#carouselExampleIndicators {
+    height: 80vh;
+} */
 
 div.game_landing,
 div.game_footer {
