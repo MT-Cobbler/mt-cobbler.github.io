@@ -11,122 +11,223 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="style/aboutPage.css" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="pageTransition.css" rel="stylesheet" type="text/css">
     <style>
-        .profile {
-            margin: 5%;
-            background-color: #eeeeee;
-            /* height: 30vh; */
-            width: 100%;
+        .box {
+            margin-bottom: 10%;
         }
         
-        .profileImage img {
+        div.container.innerElements .row {
+            height: 40vh;
             width: 100%;
-            /* height: 100%; */
-            margin-left: 10%;
-            margin-top: 5%;
+        }
+        /*
+        .row.others{
+            border-top: 2px solid #333333;
+            border-top-width: 2px;
+            border-right: 2px solid #333333;
+            padding: 2%;
+            height: 33%;
+            top: -10px;
+            right: -10px;
+
+        }
+        #second.row{
+           border-top: 2px solid #333333;
+            border-top-width: 2px;
+            border-left: 2px solid #333333;
+            padding: 2%;
+            height: 33%;
+            top: -10px;
+            left: -10px;  
+            
+        }
+*/
+        
+        .col-4.pp {
+            width: 100%;
+            height: 40vh;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: -10px 0px 15px rgba(51, 51, 51, 0.35);
+            /*
+            animation: expand 5s infinite;
+            animation-delay: 4s;
+*/
+        }
+        
+        .col-4.pp img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .row {
+            box-shadow: 15px 0px 15px rgba(51, 51, 51, 0.24);
+        }
+        
+        #second.row {
+            box-shadow: -15px 0px 15px rgba(51, 51, 51, 0.24);
+        }
+        
+        #second.row .col-4.pp {
+            box-shadow: 15px 0px 15px rgba(51, 51, 51, 0.24);
+        }
+        
+        .col-8 {
+            background: #eeeeee;
+            color: #333333;
+            /*            box-shadow: inset 5px 5px 15px -10px #333333;*/
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid black;
+        }
+        
+        #second .col-8 {
+            /*            box-shadow: inset -5px 5px 15px -10px #333333;*/
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid black;
+        }
+        
+        #one.box {
+            /*            background-color: #333;*/
+            /*            color: #eee;*/
+            color: #333;
+        }
+        
+        #two.box {
+            /*            background-color: #4d4d4d;*/
+            /*            color: white*/
+            color: #333;
+        }
+        
+        #three.box {
+            /*            background-color: #eee;*/
+            color: #333;
         }
     </style>
-    <script defer src="node_modules/swup/dist/swup.min.js" charset="utf-8"></script>
 
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-    <script defer src="transitionScript.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="pageTransition.css" type="text/css">
 </head>
 
-<body>
-    <main id="swup" class="transition-fade">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="index.html"><img src="media/logo/logo.png" class="menuLogo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse text-right" id="navbarText">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">PROJECT </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">ABOUT</a>
-                    </li>
+<body style="height: 100%" style="background-color: #eee">
 
-                </ul>
 
-            </div>
-        </nav>
+    <section style="position: absolute;">
+        <div class="dots container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="media/logo/logo.png" class="menuLogo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-right" id="navbarText">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html" style="background-color:white;">PROJECT </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" style="background-color:white;">ABOUT</a>
+                        </li>
 
-        <!-- <img src="./media/ic_group.jpg" style="position: absolute; top: 0px; z-index: 0; height: 500px; object-fit: cover;" /> -->
+                    </ul>
 
-        <div class="container-fluid ">
+                </div>
+            </nav>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-8">
-                        <div class="profile" id="profile1">
-                            <div class="row">
-                                <div class="col-4 profileImage">
-                                    <img src="media/asanda.png">
-                                </div>
-                                <div class="col-6">
-                                    <h4>Full name:</h4>
-                                    <br>
-                                    <h4>Degree:</h4>
-                                    <h4>About me:</h4>
-                                </div>
+            <div class="container-fluid">
+                <div class="box" id="one">
+                    <div class="container innerElements">
+                        <div class="row others">
+                            <div class="col-4  pp" style="background: white">
+                                <img src="media/matthew.png" />
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-8 offset-3">
-                        <div class="profile" id="profile1">
-                            <div class="row">
-                                <div class="col-4  profileImage">
-                                    <img src="media/matthew.png">
-                                </div>
-                                <div class="col-6">
-                                    <h4>Full name:</h4> <span>Matthew Timothy Schoeman</span>
-                                    <br>
-                                    <h4>Degree:</h4><span>BIS Multimedia</span>
-                                    <h4>About me:</h4><span>Love music and the outdoors</span>
-                                </div>
+                            <div class="col-2">
+                                &nbsp;
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-8">
-                        <div class="profile" id="profile1">
-                            <div class="row">
-                                <div class="col-4 profileImage">
-                                    <img src="media/tshego.png">
-                                </div>
-                                <div class="col-6">
-                                    <h4>Full name:</h4> <span>Matthew Timothy Schoeman</span>
-                                    <br>
-                                    <h4>Degree:</h4><span>BIS Multimedia</span>
-                                    <h4>About me:</h4><span>Love music and the outdoors</span>
-                                </div>
+                            <div class="col" style="background: white">
+                                <h1>Matthew Schoeman</h1>
+                                <h3>Bis Multimedia</h3>
+                                <h5>22</h5>
+                                <h5>Student | Wannabe Dev Developer</h5>
+                                <h5>Love Dogs | Enjoys Fitness</h5>
+                                <h5>mtschoeman123@gmail.com</h5>
+                                <br />
+                                <h5 style="width: 80%; text-align:justify">I studied Multimedia to answer a life long question I have, "How do they make these technologies?"</h5>
                             </div>
+
                         </div>
-                    </div>
-                    <div class="col-8 offset-3">
-                        <div class="profile" id="profile1">
-                            <div class="row">
-                                <div class="col-4 profileImage">
-                                    <img src="media/vinc.png">
-                                </div>
-                                <div class="col-6">
-                                    <h4>Full name:</h4> <span>Matthew Timothy Schoeman</span>
-                                    <br>
-                                    <h4>Degree:</h4><span>BIS Multimedia</span>
-                                    <h4>About me:</h4><span>Love music and the outdoors</span>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
-            </div>
+                <div class="box" id="two">
+                    <div class="container innerElements">
+                        <div class="row" id="second">
 
+                            <div class="col" style="background: white">
+                                <h1>Tshegofatso Sithole</h1>
+                                <h3>Bis Multimedia</h3>
+                                <h5>22</h5>
+                                <h5>Student | Wannabe Dev Developer</h5>
+                                <h5>Love Dogs | Enjoys Fitness</h5>
+                                <h5>mtschoeman123@gmail.com</h5>
+                                <br />
+                                <h5 style="width: 80%; text-align:justify">I studied Multimedia to answer a life long question I have, "How do they make these technologies?"</h5>
+                            </div>
+                            <div class="col-2">
+                                &nbsp;
+                            </div>
+                            <div class="col-4 pp" style="background: white">
+                                <img src="media/tshego.png" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="box" id="three">
+                    <div class="container innerElements">
+                        <div class="row others">
+                            <div class="col-4  pp" style="background: white">
+                                <img src="media/vinc.png" />
+                            </div>
+                            <div class="col-2">
+                                &nbsp;
+                            </div>
+                            <div class="col" style="background: white">
+                                <h1>Vincent Soweto</h1>
+                                <h3>BSc Computer Science</h3>
+                                <h5>25</h5>
+                                <h5>Student | Enthusistic Software Developer</h5>
+                                <h5>Love Dogs | Enjoys Fitness</h5>
+                                <h5>vincentsoweto22@gmail.com</h5>
+                                <br />
+                                <h5 style="width: 80%; text-align:justify">I studied Computer Science to get an understanding of how software works and the theoratical concepts around it"</h5>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </main>
+        <div class="container">
+            <h5 style="text-align: center;">Designed and Developed: Matthew Schoeman and Tshegofatso Sithole</h5>
+        </div>
+    </section>
+    <script type="text/javascript" src="script/particles.js"></script>
+    <script type="text/javascript" src="script/app.js"></script>
 </body>
 
 </html>

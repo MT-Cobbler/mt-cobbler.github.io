@@ -150,7 +150,7 @@ img.pngPick {
 }
 
 #menuOption_3 {
-    /*background-image: url("media/backgrounds/img_parallax3.jpg");*/
+    background-image: url("media/webApp/sing.png");
     background-color: gold;
     transform: translateZ(-2px);
 }
@@ -319,3 +319,256 @@ div#splashPage>div>h3 {
     margin-top: -30px;
     padding-left: 4px;
 }
+
+div.game_landing,
+div.game_footer {
+    height: 100vh;
+    position: relative;
+}
+
+div.game_landing_back,
+div.game_footer_back {
+    filter: brightness(50%);
+    width: 100vw;
+    height: 50vh;
+    background-image: url("media/game/backgrounds/world0001.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center -10px;
+    position: absolute;
+}
+
+div.game_footer_back {
+    height: 100vh;
+}
+
+div.game_footer_back {
+    filter: brightness(100%);
+    background-image: url("media/game/backgrounds/brick_wall.png");
+}
+
+div.game_footer_back>div.rstd {
+    height: 40vh;
+    width: 40vh;
+    border-radius: 100% 100%;
+    background-image: url("media/game/photo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    margin: 0 auto;
+    margin-top: 30vh;
+    filter: opacity(0.05);
+    transform: rotateZ(-10deg);
+}
+
+div.game_landing>div:nth-child(2),
+div.game_landing>div:nth-child(3) {
+    text-align: center;
+    width: 31%;
+    margin: 0 auto;
+    filter: brightness(100%);
+    color: white;
+    z-index: 2;
+}
+
+div.game_landing>div:nth-child(2) {
+    /*height: 20%;*/
+    padding: 20vh 0;
+    height: 50vh;
+}
+
+div.game_title>h1 {
+    font-size: 600%;
+    font-weight: bolder;
+}
+
+div.game_intro {
+    padding-top: 12vh;
+}
+
+div.game_intro>p,
+div.game_intro>h4 {
+    /*text-align: justify;*/
+    color: black;
+}
+
+div.character {
+    /*height: 100vh;*/
+    background-color: white;
+}
+
+div.character>div.charac_img {
+    display: inline-block;
+    width: 50%;
+    height: 100vh;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+div.charac_img>img {
+    height: 80%;
+    z-index: 2;
+    position: absolute;
+    margin-left: 13vw;
+    left: 0;
+}
+
+div.charac_img>img:nth-child(2) {
+    z-index: 0;
+    /*position: absolute;*/
+}
+
+div.charac_img:hover>img:nth-child(2) {
+    z-index: 3;
+}
+
+div.character>div.charac_info {
+    display: inline-block;
+    width: 48%;
+    padding: 0 10%;
+    text-align: justify;
+    /*margin-left: -10px;*/
+    vertical-align: middle;
+    /*height: 100vh;*/
+}
+
+div.parts {
+    height: 100vh;
+}
+
+div.part {
+    margin-left: -5px;
+    height: 49%;
+    width: 50%;
+    display: inline-block;
+    background-color: #262626;
+    vertical-align: middle;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+div.part>div {
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+    padding: 0 10%;
+}
+
+div.part>div:nth-child(1) {
+    text-align: center;
+    position: relative;
+}
+
+div.part>div>img:nth-child(1) {
+    height: 40%;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*margin-top: -30%;*/
+    /*margin-left: 5%;*/
+}
+
+div.part>div>img:nth-child(2) {
+    /*width: 60%;*/
+}
+
+div.part>div>h5 {
+    margin-top: 40%;
+    font-weight: bolder;
+    margin-bottom: 10%;
+}
+
+div.core_mech {
+    height: 100vh;
+}
+
+div.core_mech>div {
+    height: 100%;
+    width: 24%;
+    display: inline-block;
+}
+
+div.core_mech>div>div {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+div.core_mech>div>div:nth-child(2) {
+    /*background-color: gold;*/
+}
+
+div.core_mech>div>div>img {
+    height: 50%;
+    position: absolute;
+    margin-left: -200px;
+    z-index: 2;
+}
+
+div.core_mech>div>div>img:nth-child(2) {
+    position: absolute;
+    z-index: 1;
+    /*left: 0;*/
+}
+
+div.core_mech>div.mech1>div>img,
+div.core_mech>div.mech3>div>img {
+    margin-top: 20%;
+}
+
+div.core_mech>div>div:hover>img:nth-child(2) {
+    z-index: 3;
+}
+
+div.game_levels>div {
+    position: relative;
+    height: 100vh;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+div.level_back {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("media/game/backgrounds/Tutorial.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom;
+    filter: brightness(50%);
+    position: absolute;
+    z-index: -2;
+}
+
+div.game_level1>div.level_back {
+    background-image: url("media/game/backgrounds/Level1.png");
+}
+
+div.game_level2>div.level_back {
+    background-image: url("media/game/backgrounds/Level2.png");
+}
+
+div.game_level3>div.level_back {
+    background-image: url("media/game/backgrounds/Level3.png");
+}
+
+div.level_info {
+    height: 100vh;
+    width: 50vw;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.level_info>h2,
+div.level_info>h3,
+div.level_info>div {
+    margin: 0 auto;
+    width: 40%;
+    font-size: 300%;
+}
+
+div.level_info>h2 {
+    padding-top: 50%;
+}
+
+
+/*}Game Styling*/

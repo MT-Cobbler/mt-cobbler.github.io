@@ -1,5 +1,3 @@
-const swup = new Swup();
-
 function fadeIn() {
     var body = document.querySelector('body');
     body.style.transition = "margin-left 0.3s linear 0s";

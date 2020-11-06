@@ -1,0 +1,154 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0.0;
+        margin-left: -100%;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+section {
+    animation: fadeIn 1s;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+@keyframes fadedDots {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes expand{
+    0%{
+       box-shadow: 0 0 8px #333; 
+    }
+    50%{
+        box-shadow: 0 0 20px rgba(51, 51, 51, 0.0);
+    }
+    100%{
+       box-shadow: 0 0 8px #333; 
+    }
+}
+
+/*
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #333333;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.dot:nth-child(1) {
+    width: 15px;
+    height: 15px;
+    background-color: #333333;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 10%;
+    opacity: 1;
+    animation: fadedDots 2s infinite;
+
+}
+
+.dot:nth-child(2) {
+    width: 15px;
+    height: 15px;
+    background-color: #333333;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 20%;
+    opacity: 1;
+    animation: fadedDots 2.5s infinite;
+    animation-delay: 2s;
+}
+
+.dot:nth-child(3) {
+    width: 15px;
+    height: 15px;
+    background-color: #333333;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 30%;
+    opacity: 1;
+    animation: fadedDots 3s infinite;
+    animation-delay: 4s;
+
+}
+
+.dot:nth-child(4) {
+    width: 15px;
+    height: 15px;
+    background-color: #333333;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 40%;
+    opacity: 1;
+    animation: fadedDots 3.5s infinite;
+    animation-delay: 6s;
+
+}
+
+.dot:nth-child(5) {
+    width: 15px;
+    height: 15px;
+    background-color: #333333;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 50%;
+    opacity: 1;
+    animation: fadedDots 4s infinite;
+    animation-delay: 8s;
+
+}
+
+.dot:nth-child(6) {
+    width: 15px;
+    height: 15px;
+    background-color: #333333;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 50%;
+    opacity: 1;
+    animation: fadedDots 4.5s infinite;
+    animation-delay: 10s;
+
+}
+
+.dot:nth-child(7) {
+    width: 15px;
+    height: 15px;
+    background-color: #333333;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 50%;
+    opacity: 1;
+    animation: fadedDots 5s infinite;
+    animation-delay: 12s;
+
+}
+*/
+
+/*
+.dots.container {
+    position: absolute;
+    z-index: -1;
+    margin-left: -25%;
+    left: 50%;
+    margin-top: 30%;
+    opacity: 1;
+}
+*/

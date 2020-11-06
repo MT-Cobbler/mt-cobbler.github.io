@@ -1,0 +1,97 @@
+html{
+  scroll-behavior: smooth;
+}
+
+.profileName
+{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-image: url("../img/399305.jpg");
+  background-repeat: no-repeat, repeat;
+  background-color: #cccccc;
+  font-family: sans-serif;
+  color: grey;
+}
+nav{
+  background-color : #70dbdb;
+}
+
+.nameIntro {
+    padding-top: 10%;
+}
+.btn{
+  color: grey;
+  background-color: mediumturquoise;
+  border-color:mediumturquoise ;
+}
+
+
+.project{
+  padding-top: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.contpart{
+  padding-top: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+ .welcoming{
+   font-size: 250%;
+ }
+
+ .contme{
+   font-size: 150%;
+ }
+
+ .container1 {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+ padding-left: 2%;
+ padding-right: 2%;
+ padding-top: 2%;
+ padding-bottom: 2%;
+
+}
+
+.image1 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgb(47, 0, 255);
+}
+
+.container1:hover .overlay1 {
+  opacity: 1;
+}
+
+.icon1 {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-user:hover {
+  color: #eee;
+}
